@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name=viewport content="width=1280,height=720">
+    <title>精选版</title>
+    <style>
+    *{margin:0; padding:0;outline:none;}
+      ul,li{list-style:none}
+      img{border:none;padding:0; border:0;margin:0;clear:both;}
+      body{font-family:"Microsoft YaHei,Arial"; color:#fff;width:1280px;height: 720px;}
+      .openImage{position: absolute;width: 1280px;height: 720px;z-index: 999;}
+      .openImage .loadEffect{width: 120px;height: 120px;position: relative;margin: 0 auto;margin-top:300px;mask-image:url('/esport/static/load.png');-webkit-mask-image:url('/esport/static/load.png');background:url('/esport/static/load.png'); line-height:0;font-size:0;text-align:center;animation-name: load;animation-duration: 3s;animation-iteration-count: infinite;animation-timing-function: linear;-webkit-animation-name: load;-webkit-animation-duration: 2s;-webkit-animation-iteration-count: infinite;-webkit-animation-timing-function: linear;white-space: nowrap;overflow: hidden;}
+      @-webkit-keyframes load{
+        0%{-webkit-transform: rotate(0deg);}
+        100%{-webkit-transform: rotate(360deg);}
+      }
+      @keyframes load{
+        0%{-webkit-transform: rotate(0deg);}
+        100%{-webkit-transform: rotate(360deg);}
+      }
+      #debugger{position: absolute;top: 0px;height: 100px;width: 1280px;background-color: gray;left: 0px}
+      #debugger1,#debugger2,#debugger3{height: 30px;overflow: hidden;line-height: 30px;}
+    </style>
+  </head>
+  <body>
+    <div id="debugger" style="display:none">
+      <div id="debugger1"></div>
+      <div id="debugger2"></div>
+      <div id="debugger3"></div>
+    </div>
+    <div class="openImage" style="display: none">
+        <img width="100%" src="/esport/static/splash.jpg" />
+        <div class="loadEffect"></div>
+    </div>
+      <div id="app"></div>
+      <!--生产环境--->
+      <!-- <script src="/esport/static/bi_log.js"></script>
+      <script src="/esport/static/jquery/jquery.min.js"></script> -->
+      <!-- 测试环境--->
+      <script src="/static/jquery/jquery.min.js"></script>
+      <script src="/static/bi_log.js"></script>
+      <!-- <script src="https://cdn.bootcss.com/vue/2.5.16/vue.min.js"></script>
+      <script src="https://cdn.bootcss.com/vuex/3.0.1/vuex.min.js"></script>
+      <script src="https://cdn.bootcss.com/vue-router/3.0.1/vue-router.min.js"></script> -->
+      <!-- built files will be auto injected -->
+    </body>
+</html>

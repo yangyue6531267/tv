@@ -1,0 +1,5 @@
+/build/
+/config/
+/esport/
+/*.js
+/test/unit/coverage/

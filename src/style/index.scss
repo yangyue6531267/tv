@@ -1,0 +1,210 @@
+/*****---------------初始化---------------*****/
+$position:absolute;
+$setFont:Microsoft YaHei,Arial;
+#content_box{position:absolute;width:1280px; height:720px;overflow:hidden;background:url('../assets/index.jpg') no-repeat;background-size: 100%;}
+.f_l{ float:left;}
+/*******************reset************************/
+.pos{ position:absolute}
+.posli li{ position:absolute}
+.posli li a img{ position:absolute;border-radius: 20px;}
+a{ display:block; color:#fff; text-decoration:none}
+.f21{ font-size:21px}
+.f22{ font-size:22px}
+.f24{ font-size:24px}
+.f30{ font-size:30px}
+/********************item_0********************************/
+
+.roll_l{
+  left:-750px;
+  animation: roll 1s;
+  -webkit-animation: roll 1s;	/* Safari 和 Chrome */
+}
+@keyframes roll
+{
+  from {left:0px;}
+  to {left:-750px;}
+}
+@-webkit-keyframes roll /* Safari and Chrome */
+{
+  from {left:0px;}
+  to {left:-750px;}
+}
+.roll_r{
+  left:0px;
+  animation: roll_r 1s;
+  -webkit-animation: roll_r 1s;	/* Safari 和 Chrome */
+}
+@keyframes roll_r
+{
+  from {left:-750px;}
+  to {left:0px;}
+}
+@-webkit-keyframes roll_r /* Safari and Chrome */
+{
+  from {left:-750px;}
+  to {left:0px;}
+}
+
+.ws_logo{ width:274px; height:48px; overflow:hidden; margin:23px 30px 0 60px;}
+.time{position: absolute;right:75px;font-size:24px;font-family:$setFont;top: 30px;}
+.ws_logo img{ width:124px; height:48px;padding-right: 10px;}
+.date{width:171px;left:75px;top:659px; opacity:.8;}
+.network{left:167px;top:659px; width:65px; height:25px}
+.network_default{background:url(http://bs3-epg.wasu.tv/a_index/images/network.png) no-repeat;}
+.network_false{background:url(http://bs3-epg.wasu.tv/a_index/images/network_false.png) no-repeat;}
+.nav{left:537px;top:40px; width:50%}
+.nav ul li a{ color:white; float:left;  height:40px; line-height:40px; opacity:.5; width:66px; text-align:center; padding:0 10px; margin-right:40px}
+.nav ul li a.hover{ color:#fffe37; border:#ffff3e 3px solid; border-radius:12px; opacity:1;}
+.nav ul li a.r_hover{ color:#fffe37; border:#ffff3e 3px solid; border-radius:12px; opacity:1;}
+.nav ul li a.default{ color:#fff;opacity:1; border-bottom:#cfe6fe 2px solid;}
+.nav ul li a:hover{ color:#fffe37; border:#ffff3e 3px solid; border-radius:12px; opacity:1;}
+.nav ul li a:default{ color:#fff;opacity:1; border-bottom:#cfe6fe 2px solid;}
+
+/**********************item_1*************************/
+.content{
+  left: 55px;
+  top: 130px;
+  width: 1225px;
+  height: 500px;
+  overflow: hidden;
+  z-index: 1
+}
+.content img{display:block;}
+.list_1 img{
+  position:absolute;
+  width: 420px;
+  height: 255px;
+  left: 21px;
+  top: 20px;
+}
+.list_1 img:hover,.list_2 img:hover,.list_3 img:hover{
+  margin: -7px;
+  border: 7px #D94869 solid;
+}
+.list_1 img.hover,.list_2 img.hover,.list_3 img.hover{
+  margin: -7px;
+  border: 7px #D94869 solid;
+}
+.list_2 img{
+  position:absolute;
+  width: 200px;
+  height: 125px;
+  left: 20px;
+  top: 287px;
+}
+.list_3 img{
+  position:absolute;
+  width: 200px;
+  height: 125px;
+  left: 240px;
+  top: 287px;
+}
+.content_1{
+  width: 20000px;
+  left: 440px;
+  height: 255px;
+  top: 20px;
+}
+.content_1 li{
+  width: 200px;
+  height: 255px;
+  float: left;
+  margin-left: 13px ;
+}
+.content_1 img{
+  width: 200px;
+  height: 255px;
+}
+.content_1 img:hover,.content_2 img:hover{
+  margin: -7px;
+  border: 7px #D94869 solid;
+}
+.content_1 img.hover,.content_2 img.hover{
+  margin: -7px;
+  border: 7px #D94869 solid;
+}
+.content_2{
+  width: 20000px;
+  height: 125px;
+  left: 440px;
+  top: 287px;
+}
+.content_2 li{
+  width: 200px;
+  height: 125px;
+  float: left;
+  margin-left:13px ;
+}
+.content_2 img{
+  width: 200px;
+  height: 125px;
+}
+
+
+/**【20151116】VIP 看过 收藏 搜索**/
+.btn{left:280px; top:600px;width: 1000px;height:66px;}
+.btn li{width:66px; height:66px; text-align:center;float: left;margin-right: 125px;z-index: 10;}
+.btn span{color: #666666;display: block;position: relative;top: -50px;left: 70px;font-size: 27px;font-weight: 500;font-family: "微软雅黑";}
+.btn img{z-index: 100;float: left;width: 66px;height: 66px;border-radius: 50%;}
+.btn_1{background:url(../assets/blur.png) no-repeat center top;}
+.btn_2{background:url(../assets/blur.png) no-repeat center top;}
+.btn_3{background:url(../assets/blur.png) no-repeat center top;}
+.btn_4{background:url(../assets/blur.png) no-repeat center top;}
+
+.btn_1:hover,.btn_2:hover,.btn_3:hover,.btn_4:hover{background:url(../assets/select.png) no-repeat center top;border-radius: 50%;}
+
+.btn_1.hover,.btn_2.hover,.btn_3.hover,.btn_4.hover{background:url(../assets/select.png) no-repeat center top;border-radius: 50%;}
+
+.btn_1 img:hover,.btn_2 img:hover,.btn_3 img:hover,.btn_4 img:hover{}
+
+.btn_1 img.hover,.btn_2 img.hover,.btn_3 img.hover,.btn_4 img.hover{}
+
+.userBox{display:none;}
+
+/** 标题 ***/
+.mask{position:absolute;height:45px;opacity: 0.5;background: #000000;}
+.mask_1{width:420px;top:230px;left:21px;z-index: 1; }
+.mask_1 h2{text-align:left!important;margin-left: 15px;}
+h2{
+  position: absolute;
+  bottom: 0;
+  font-size: 24px;
+  color: white;
+  font-weight: normal;
+  padding-bottom: 8px;
+  text-align:center;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  z-index: 120;
+  font-family: "Microsoft YaHei" ! important;
+}
+
+/*=====弹出层 start=====*/
+img{vertical-align:middle;}
+#use_esc{display:none;}
+.use_esc{height:720px;width:1280px; position:absolute; left:0; top:0;}
+.use_model{background:#000; opacity:0.6; position:absolute; left:0; top:0;z-index:14;height:720px;width:1280px;}
+.use_escimg{ position:absolute; background:url(http://sonyceb-new.wasu.tv/android_luncher/images/lobby/use_bg.png) no-repeat; width:840px; height:357px; z-index:99;opacity:1; left:220px; top:150px;}
+.use_escimg .warn{ padding-left:25px; padding-top:15px;}
+.use_escimg .u_txt{ text-align:center; font-size:24px; height:100px; line-height:100px; padding-top:50px;}
+.use_escimg .u_txt img{ width:100px; height:100px; margin-left:20px;}
+.use_escimg p{ text-align:center; padding-top:30px;}
+.use_escimg p a{ background:url(http://sonyceb-new.wasu.tv/android_luncher/images/lobby/btn_1.png) no-repeat; width:110px; height:40px; line-height:40px; text-align:center; display:inline-block; color:#fff; margin:0 40px;}
+.use_escimg p a.focushover{ background:url(http://sonyceb-new.wasu.tv/android_luncher/images/lobby/btn_2.png) no-repeat;}
+#use_develop{display:none;}
+.be_escimg{ position:absolute; background:url(http://sonyceb-new.wasu.tv/android_luncher/images/lobby/use_bg1.png) no-repeat; width:571px; height:297px; z-index:99;opacity:1; left:350px; top:220px;}
+.be_escimg .warn{ padding-left:20px; padding-top:8px;}
+.be_escimg .u_txt{ padding-top:40px;color: #000000;}
+.be_escimg p{ text-align:center; padding-top:20px;}
+/*=====弹出层 end=====*/
+
+
+
+
+
+
+
+
+
